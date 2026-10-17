@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Carter — Frontend Developer | Interactive Web Experiences</title>
+  <meta name="description" content="Freelance frontend developer building fast, beautiful, and interactive websites that help businesses stand out. View selected work and start your project." />
+  <meta property="og:title" content="Alex Carter — Frontend Developer" />
+  <meta property="og:description" content="I turn ideas into exceptional web experiences. Freelance frontend development for businesses that want to stand out." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#08090D" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2308090D'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='30' fill='%23A78BFA' text-anchor='middle'%3EAC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="site-nav">
+    <div class="nav-inner">
+      <a class="logo" href="#home" aria-label="Alex Carter — home">
+        <span class="logo-mark" aria-hidden="true">AC</span>
+        <span class="logo-text">Alex Carter</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home" class="nav-link is-active">Home</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Start a Project</a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav aria-label="Mobile">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-fallback"></div>
+        <div class="hero-vignette"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="availability" id="availability" hidden>
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <span id="availability-text">Available for new projects</span>
+        </p>
+        <h1 class="hero-title" id="hero-heading">
+          <span class="line">I turn ideas into</span>
+          <span class="line gradient-text">exceptional web experiences.</span>
+        </h1>
+        <p class="hero-sub">
+          I'm a freelance frontend developer building fast, beautiful, and interactive
+          websites that help businesses stand out.
+        </p>
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn-primary btn-lg">Explore My Work</a>
+          <a href="#contact" class="btn btn-ghost btn-lg">Let's Work Together</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#work" aria-label="Scroll to work">
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-heading">
+      <div class="container">
+        <p class="eyebrow">Selected Work</p>
+        <div class="section-head">
+          <h2 id="work-heading">Projects with <span class="gradient-text">purpose</span></h2>
+          <p class="section-lead">A few engagements that show how I think, build, and measure. <em>Example projects — replace with real client work.</em></p>
+        </div>
+        <div class="project-grid" id="project-grid"><!-- rendered by js --></div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section section-alt" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <div class="section-head">
+          <h2 id="services-heading">What I can do <span class="gradient-text">for your business</span></h2>
+          <p class="section-lead">Every engagement is scoped around one thing: a measurable outcome for you.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">◈</div>
+            <h3>High-converting landing pages</h3>
+            <p>Pages engineered around a single action — more inquiries, signups, and sales from the traffic you already have.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">⬢</div>
+            <h3>Business &amp; agency websites</h3>
+            <p>A credible, polished online presence that makes prospects take you seriously before the first call.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">▣</div>
+            <h3>Responsive frontend development</h3>
+            <p>Pixel-faithful builds that load fast and work flawlessly on every phone, tablet, and desktop your customers use.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">✦</div>
+            <h3>Interactive UI &amp; creative experiences</h3>
+            <p>Motion, 3D, and micro-interactions that make your brand unforgettable — without hurting performance.</p>
+          </article>
+        </div>
+        <div class="center">
+          <a href="#contact" class="btn btn-primary btn-lg">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="about-media reveal">
+          <div class="portrait" role="img" aria-label="Profile photo placeholder">
+            <span aria-hidden="true">AC</span>
+          </div>
+          <p class="placeholder-note">Replace with your photo</p>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2 id="about-heading">Developer with a <span class="gradient-text">designer's eye</span></h2>
+          <!-- PLACEHOLDER BIO — replace with your own story. Do not publish invented clients or achievements. -->
+          <p class="placeholder-note" style="margin-bottom:1rem"><em>Example introduction — write your own story here.</em></p>
+          <p>I'm Alex Carter, a freelance frontend developer who lives at the intersection of engineering and design. I believe the best websites are built like products: every animation, layout choice, and millisecond of load time should serve the person using it.</p>
+          <p>My philosophy is simple — <strong>clarity over cleverness</strong>. I use motion and interactivity to guide attention, never to decorate. The result is websites that feel premium, load fast, and convert.</p>
+          <h3 class="skills-title">Core skills</h3>
+          <ul class="skills-list">
+            <li>HTML &amp; CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+            <li>Three.js / WebGL</li><li>GSAP</li><li>Tailwind CSS</li>
+            <li>Performance</li><li>Accessibility</li><li>Responsive Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-alt" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <p class="eyebrow">How we'll work</p>
+        <div class="section-head">
+          <h2 id="process-heading">A clear path from <span class="gradient-text">idea to launch</span></h2>
+        </div>
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="step-num" aria-hidden="true">01</span>
+            <h3>Discover</h3>
+            <p>We dig into your goals, audience, and what success looks like — so we build the right thing, not just a pretty thing.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num" aria-hidden="true">02</span>
+            <h3>Design</h3>
+            <p>I plan the experience and interface: structure, visual direction, and interactions — reviewed with you before a line of code.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num" aria-hidden="true">03</span>
+            <h3>Build</h3>
+            <p>Responsive, accessible development with regular previews. You always know exactly where the project stands.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num" aria-hidden="true">04</span>
+            <h3>Launch</h3>
+            <p>Testing, performance optimization, and deployment — plus support after go-live so launch day is boring (in a good way).</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-heading">Have an idea?<br /><span class="gradient-text">Let's make it real.</span></h2>
+          <p class="section-lead">Tell me about your project and I'll get back to you within one business day.</p>
+          <ul class="contact-links" id="contact-links">
+            <li><a id="link-email" href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><a id="link-github" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a id="link-linkedin" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required minlength="2" />
+              <p class="field-error" id="err-name" hidden>Please enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input type="email" id="f-email" name="email" autocomplete="email" required />
+              <p class="field-error" id="err-email" hidden>Please enter a valid email address.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="f-type">Project type</label>
+              <select id="f-type" name="projectType" required>
+                <option value="">Select…</option>
+                <option>Landing page</option>
+                <option>Business / agency website</option>
+                <option>Web application</option>
+                <option>Interactive / 3D experience</option>
+                <option>Something else</option>
+              </select>
+              <p class="field-error" id="err-type" hidden>Please choose a project type.</p>
+            </div>
+            <div class="field">
+              <label for="f-budget">Budget range <span class="optional">(optional)</span></label>
+              <select id="f-budget" name="budget">
+                <option value="">Select…</option>
+                <option>Under $2k</option>
+                <option>$2k – $5k</option>
+                <option>$5k – $10k</option>
+                <option>$10k+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-details">Project details</label>
+            <textarea id="f-details" name="details" rows="5" required minlength="10" placeholder="What are you building? Goals, timeline, anything that helps…"></textarea>
+            <p class="field-error" id="err-details" hidden>Please tell me a little more (at least 10 characters).</p>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-submit" id="form-submit">
+            <span class="btn-label">Send Message</span>
+            <span class="spinner" aria-hidden="true" hidden></span>
+          </button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> <span id="footer-name">Alex Carter</span>. Crafted with care.</p>
+      <p class="footer-note">The Interactive Dimension</p>
+    </div>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" id="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close project details">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
